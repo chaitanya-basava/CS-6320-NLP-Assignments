@@ -96,22 +96,30 @@ class LanguageModel:
         """
         Compute the probability of an n-gram with backoff smoothing.
         :param _tokens: The tokens of the n-gram to compute the probability for.
-        :return: The probability of the given n-gram with backoff.
+        :return: The probability of the given n-gram with backoff smoothing.
         """
         ngram = tuple(_tokens)
 
-        # If no more tokens to back off to, return uniform probability for unseen unigrams
-        if len(ngram) == 0:
-            return 1 / self.vocab_size  # Assign uniform probability for unseen unigrams
+        # Handle unigram case: If it's a unigram, apply Laplace/Add-k smoothing
+        if len(ngram) == 1:
+            token = ngram[0]
+            unigram_count = self.ng_counter.ngram_counts.get((token,), 0)
+            # Apply Laplace or Add-k smoothing (set k=1 for Laplace smoothing)
+            smoothed_prob = (unigram_count + 1) / (self.ng_counter.total_tokens + self.vocab_size)
+            return smoothed_prob
 
-        # Attempt to compute n-gram probability
+        # For higher-order n-grams (e.g., bigrams or trigrams), apply backoff
+        context = ngram[:-1]
         ngram_count = self.ng_counter.ngram_counts.get(ngram, 0)
-        if ngram_count > 0:
-            context_count = self.ng_counter.context_counts.get(ngram[:-1], 0)
-            return ngram_count / context_count if context_count > 0 else 0
+        context_count = self.ng_counter.context_counts.get(context, 0)
 
-        # Back off to a lower order (remove the first token)
-        return self.backoff * self.backoff_probability(*ngram[1:])
+        if context_count > 0 and ngram_count > 0:
+            # Return the higher-order n-gram probability
+            return ngram_count / context_count
+        else:
+            # Backoff to lower-order n-gram (remove the first token)
+            return self.backoff * self.backoff_probability(*ngram[1:])
+
     
     def absolute_discounting_probability(self, *_tokens: str) -> float:
         """
