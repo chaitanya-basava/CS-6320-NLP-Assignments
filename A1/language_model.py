@@ -5,8 +5,13 @@ from preprocessor import Preprocessor
 
 
 class LanguageModel:
-    def __init__(self, ng_counter: NGramCounter, vocab_size: int, k: float = 1.0):
+    def __init__(self, ng_counter: NGramCounter, vocab_size: int, k: float = 1.0, backoff: float = 0.4, discount: float = 0.75,
+                 lambda_1: float = 0.5, lambda_2: float = 0.5):
         self.k = k
+        self.backoff = backoff
+        self.discount = discount
+        self.lambda_1 = lambda_1
+        self.lambda_2 = lambda_2
         self.ng_counter = ng_counter
         self.vocab_size = vocab_size
 
@@ -35,6 +40,12 @@ class LanguageModel:
             return self.laplace_probability(*_tokens)
         elif _type == 'add-k':
             return self.add_k_probability(*_tokens)
+        elif _type == 'backoff':
+            return self.backoff_probability(*_tokens)
+        elif _type == 'discounting':
+            return self.absolute_discounting_probability(*_tokens)
+        elif _type == 'interpolation':
+            return self.interpolation_probability(*_tokens)  
         else:
             raise ValueError(f"Invalid type of smoothing: {_type}")
 
@@ -48,6 +59,16 @@ class LanguageModel:
 
         denom = self.ng_counter.total_tokens if self.ng_counter.n == 1 else self.ng_counter.context_counts[ngram[:-1]]
         return self.ng_counter.ngram_counts[ngram] / denom if denom > 0 else 0
+    
+    def unigram_probability(self, token: str) -> float:
+        """
+        Compute the probability of a unigram (1-token n-gram).
+        This is separate from n-gram validation, which expects multiple tokens.
+        """
+        unigram_count = self.ng_counter.ngram_counts.get((token,), 0)  # Unigram count
+        return unigram_count / self.ng_counter.total_tokens if self.ng_counter.total_tokens > 0 else 0
+
+
 
     def laplace_probability(self, *_tokens: str) -> float:
         """
@@ -70,6 +91,89 @@ class LanguageModel:
 
         denom = self.ng_counter.total_tokens if self.ng_counter.n == 1 else self.ng_counter.context_counts[ngram[:-1]]
         return (self.ng_counter.ngram_counts[ngram] + self.k) / (denom + self.k * self.vocab_size)
+    
+    def backoff_probability(self, *_tokens: str) -> float:
+        """
+        Compute the probability of an n-gram with backoff smoothing.
+        :param _tokens: The tokens of the n-gram to compute the probability for.
+        :return: The probability of the given n-gram with backoff.
+        """
+        ngram = tuple(_tokens)
+
+        # If no more tokens to back off to, return uniform probability for unseen unigrams
+        if len(ngram) == 0:
+            return 1 / self.vocab_size  # Assign uniform probability for unseen unigrams
+
+        # Attempt to compute n-gram probability
+        ngram_count = self.ng_counter.ngram_counts.get(ngram, 0)
+        if ngram_count > 0:
+            context_count = self.ng_counter.context_counts.get(ngram[:-1], 0)
+            return ngram_count / context_count if context_count > 0 else 0
+
+        # Back off to a lower order (remove the first token)
+        return self.backoff * self.backoff_probability(*ngram[1:])
+    
+    def absolute_discounting_probability(self, *_tokens: str) -> float:
+        """
+        Compute the probability of an n-gram using absolute discounting.
+        :param _tokens: The tokens of the n-gram to compute the probability for.
+        :return: The probability of the n-gram with absolute discounting.
+        """
+        ngram = self.__validate_ngram(*_tokens)
+        
+        # Context for the n-gram (all tokens except the last)
+        context = ngram[:-1]
+        context_count = self.ng_counter.context_counts.get(context, 0)
+
+        if context_count == 0:
+            # If context doesn't exist, back off to lower order n-gram (e.g., unigram probability)
+            return self.backoff_probability(*_tokens)
+
+        # Count of the n-gram
+        ngram_count = self.ng_counter.ngram_counts.get(ngram, 0)
+
+        # Apply discount to the n-gram count
+        discounted_count = max(ngram_count - self.discount, 0)
+
+        # Calculate the first part of the absolute discounting formula
+        discounted_prob = discounted_count / context_count
+
+        # Compute the number of distinct followers (tokens that follow the given context)
+        num_context_followers = len({
+            ngram[-1] for ngram in self.ng_counter.ngram_counts if ngram[:-1] == context
+        })
+
+        # Calculate lambda (remaining probability mass) for backoff
+        lambda_weight = (self.discount * num_context_followers) / context_count if context_count > 0 else 0
+
+        # Combine discounted probability and backed off lower-order probability
+        lower_order_prob = self.backoff_probability(*_tokens[1:])
+        return discounted_prob + lambda_weight * lower_order_prob
+    
+    def interpolation_probability(self, *_tokens: str) -> float:
+        """
+        Compute the probability of an n-gram using interpolation smoothing.
+        :param _tokens: The tokens of the n-gram to compute the probability for.
+        :return: The interpolated probability of the n-gram.
+        """
+        ngram = tuple(_tokens)
+
+        # If it's a bigram model, calculate interpolated probability between bigram and unigram
+        if len(ngram) == 2:
+            bigram_prob = self.ngram_probability(*ngram)  # Get bigram probability
+            unigram_prob = self.unigram_probability(ngram[-1])  # Get unigram probability for the last word
+
+            # Interpolated probability: lambda_2 * P_bigram + lambda_1 * P_unigram
+            return self.lambda_2 * bigram_prob + self.lambda_1 * unigram_prob
+
+        # If it's a unigram model, just return the unigram probability
+        elif len(ngram) == 1:
+            return self.unigram_probability(*ngram)
+        
+        # For other n-grams (e.g., trigram), you could extend this logic if needed
+        else:
+            return 0  # Default return value for unsupported n-grams
+
 
 
 if __name__ == "__main__":
