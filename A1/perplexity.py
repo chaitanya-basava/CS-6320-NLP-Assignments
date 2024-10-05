@@ -24,10 +24,10 @@ class Perplexity:
             tokens = self.preprocessor.preprocess(sentence)
             sentence_log_prob = self.sentence_log_probability(tokens, _type)
             total_log_probability += sentence_log_prob
-            total_words += len(tokens) - 1
+            total_words += len(tokens) - 2
 
         average_log_probability = total_log_probability / total_words
-        perplexity = math.exp(-average_log_probability)
+        perplexity = math.pow(2, -average_log_probability)
         return perplexity
 
     def sentence_log_probability(self, tokens: List[str], _type: str) -> float:
@@ -40,14 +40,9 @@ class Perplexity:
         log_prob = 0
         n = self.language_model.ng_counter.n
 
-        if n == 1:
-            for token in tokens[1:]:
-                prob = self.language_model.probability(_type, token)
-                log_prob += math.log(prob) if prob > 0 else float('-inf')
-        else:
-            for i in range(1, len(tokens)):
-                context = tuple(tokens[max(0, i - n + 1): i])
-                prob = self.language_model.probability(_type, *context, tokens[i])
-                log_prob += math.log(prob) if prob > 0 else float('-inf')
+        for i in range(n-1, len(tokens)):
+            context = tuple(tokens[max(0, i - n + 1): i])
+            prob = self.language_model.probability(_type, *context, tokens[i])
+            log_prob += math.log(prob) if prob > 0 else float('-inf')
 
         return log_prob
