@@ -1,2 +1,7 @@
+.DS_Store/
+
 A1_DATASET.zip
 A1_DATASET/
+
+unigram_bigram_plots/
+vocab_plot/

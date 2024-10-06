@@ -65,7 +65,7 @@ class Preprocessor:
 
 def plot_histogram(counts, name):
     counts = sorted(counts.items(), key=lambda item: item[1], reverse=True)
-    print(counts)
+    # print(counts)
 
     words, counts = zip(*counts[:20])
     words = [' '.join(pair) for pair in words]
@@ -89,6 +89,6 @@ if __name__ == "__main__":
 
     preprocessor.build_vocab(train_data)
 
-    print(preprocessor.vocab_size())
+    # print(preprocessor.vocab_size())
 
     plot_histogram(preprocessor.word_counts, "unigram.png")
