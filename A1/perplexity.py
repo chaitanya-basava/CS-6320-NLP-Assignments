@@ -27,7 +27,7 @@ class Perplexity:
             total_words += len(tokens) - 2
 
         average_log_probability = total_log_probability / total_words
-        perplexity = math.pow(2, -average_log_probability)
+        perplexity = math.exp(-average_log_probability)
         return perplexity
 
     def sentence_log_probability(self, tokens: List[str], _type: str) -> float:
