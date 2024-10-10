@@ -10,17 +10,17 @@ class Perplexity:
         self.language_model = language_model
         self.preprocessor = preprocessor
 
-    def compute_perplexity(self, dev_set: List[str], _type: str) -> float:
+    def compute_perplexity(self, data: List[str], _type: str) -> float:
         """
         Compute the perplexity of the language model on the development set.
-        :param dev_set: List of sentences in the development set.
+        :param data: List of sentences.
         :param _type: The type of smoothing to use.
         :return: Perplexity of the model on the development set.
         """
         total_log_probability = 0
         total_words = 0
 
-        for sentence in dev_set:
+        for sentence in data:
             tokens = self.preprocessor.preprocess(sentence)
             sentence_log_prob = self.sentence_log_probability(tokens, _type)
             total_log_probability += sentence_log_prob
