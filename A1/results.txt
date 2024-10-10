@@ -1,0 +1,698 @@
+Missing Token Count:  2
+Vocabulary size: 3079
+
+k =  0.01
+Unigram Add-k Smoothing Perplexity on train data: 406.83
+Bigram Add-k Smoothing Perplexity on train data: 53.46
+Unigram Add-k Smoothing Perplexity on validation data: 359.73
+Bigram Add-k Smoothing Perplexity on validation data: 196.49
+
+k =  0.10888888888888888
+Unigram Add-k Smoothing Perplexity on train data: 406.87
+Bigram Add-k Smoothing Perplexity on train data: 132.22
+Unigram Add-k Smoothing Perplexity on validation data: 359.99
+Bigram Add-k Smoothing Perplexity on validation data: 253.44
+
+k =  0.20777777777777778
+Unigram Add-k Smoothing Perplexity on train data: 406.94
+Bigram Add-k Smoothing Perplexity on train data: 186.91
+Unigram Add-k Smoothing Perplexity on validation data: 360.27
+Bigram Add-k Smoothing Perplexity on validation data: 305.18
+
+k =  0.30666666666666664
+Unigram Add-k Smoothing Perplexity on train data: 407.03
+Bigram Add-k Smoothing Perplexity on train data: 233.75
+Unigram Add-k Smoothing Perplexity on validation data: 360.57
+Bigram Add-k Smoothing Perplexity on validation data: 348.97
+
+k =  0.40555555555555556
+Unigram Add-k Smoothing Perplexity on train data: 407.16
+Bigram Add-k Smoothing Perplexity on train data: 275.75
+Unigram Add-k Smoothing Perplexity on validation data: 360.89
+Bigram Add-k Smoothing Perplexity on validation data: 387.74
+
+k =  0.5044444444444445
+Unigram Add-k Smoothing Perplexity on train data: 407.31
+Bigram Add-k Smoothing Perplexity on train data: 314.25
+Unigram Add-k Smoothing Perplexity on validation data: 361.22
+Bigram Add-k Smoothing Perplexity on validation data: 422.92
+
+k =  0.6033333333333333
+Unigram Add-k Smoothing Perplexity on train data: 407.48
+Bigram Add-k Smoothing Perplexity on train data: 350.00
+Unigram Add-k Smoothing Perplexity on validation data: 361.57
+Bigram Add-k Smoothing Perplexity on validation data: 455.35
+
+k =  0.7022222222222222
+Unigram Add-k Smoothing Perplexity on train data: 407.67
+Bigram Add-k Smoothing Perplexity on train data: 383.49
+Unigram Add-k Smoothing Perplexity on validation data: 361.93
+Bigram Add-k Smoothing Perplexity on validation data: 485.57
+
+k =  0.8011111111111111
+Unigram Add-k Smoothing Perplexity on train data: 407.88
+Bigram Add-k Smoothing Perplexity on train data: 415.05
+Unigram Add-k Smoothing Perplexity on validation data: 362.30
+Bigram Add-k Smoothing Perplexity on validation data: 513.95
+
+k =  0.9
+Unigram Add-k Smoothing Perplexity on train data: 408.11
+Bigram Add-k Smoothing Perplexity on train data: 444.94
+Unigram Add-k Smoothing Perplexity on validation data: 362.69
+Bigram Add-k Smoothing Perplexity on validation data: 540.77
+
+Laplace Smoothing:
+Unigram Laplace Smoothing Perplexity on train data: 408.36
+Bigram Laplace Smoothing Perplexity on train data: 473.69
+Unigram Laplace Smoothing Perplexity on validation data: 363.09
+Bigram Laplace Smoothing Perplexity on validation data: 566.51
+
+Un-smoothed:
+Un-smoothed Unigram Perplexity on train data: 406.82
+Un-smoothed Bigram Perplexity on train data: 34.41
+Un-smoothed Unigram Perplexity on validation data: 359.71
+Un-smoothed Bigram Perplexity on validation data: inf
+
+
+
+
+Missing Token Count:  3
+Vocabulary size: 2217
+
+k =  0.01
+Unigram Add-k Smoothing Perplexity on train data: 337.63
+Bigram Add-k Smoothing Perplexity on train data: 47.72
+Unigram Add-k Smoothing Perplexity on validation data: 309.97
+Bigram Add-k Smoothing Perplexity on validation data: 156.01
+
+k =  0.10888888888888888
+Unigram Add-k Smoothing Perplexity on train data: 337.65
+Bigram Add-k Smoothing Perplexity on train data: 102.43
+Unigram Add-k Smoothing Perplexity on validation data: 310.10
+Bigram Add-k Smoothing Perplexity on validation data: 187.76
+
+k =  0.20777777777777778
+Unigram Add-k Smoothing Perplexity on train data: 337.68
+Bigram Add-k Smoothing Perplexity on train data: 139.17
+Unigram Add-k Smoothing Perplexity on validation data: 310.23
+Bigram Add-k Smoothing Perplexity on validation data: 221.01
+
+k =  0.30666666666666664
+Unigram Add-k Smoothing Perplexity on train data: 337.72
+Bigram Add-k Smoothing Perplexity on train data: 170.11
+Unigram Add-k Smoothing Perplexity on validation data: 310.37
+Bigram Add-k Smoothing Perplexity on validation data: 249.25
+
+k =  0.40555555555555556
+Unigram Add-k Smoothing Perplexity on train data: 337.77
+Bigram Add-k Smoothing Perplexity on train data: 197.59
+Unigram Add-k Smoothing Perplexity on validation data: 310.51
+Bigram Add-k Smoothing Perplexity on validation data: 274.24
+
+k =  0.5044444444444445
+Unigram Add-k Smoothing Perplexity on train data: 337.83
+Bigram Add-k Smoothing Perplexity on train data: 222.61
+Unigram Add-k Smoothing Perplexity on validation data: 310.67
+Bigram Add-k Smoothing Perplexity on validation data: 296.91
+
+k =  0.6033333333333333
+Unigram Add-k Smoothing Perplexity on train data: 337.90
+Bigram Add-k Smoothing Perplexity on train data: 245.75
+Unigram Add-k Smoothing Perplexity on validation data: 310.83
+Bigram Add-k Smoothing Perplexity on validation data: 317.80
+
+k =  0.7022222222222222
+Unigram Add-k Smoothing Perplexity on train data: 337.98
+Bigram Add-k Smoothing Perplexity on train data: 267.36
+Unigram Add-k Smoothing Perplexity on validation data: 311.00
+Bigram Add-k Smoothing Perplexity on validation data: 337.27
+
+k =  0.8011111111111111
+Unigram Add-k Smoothing Perplexity on train data: 338.07
+Bigram Add-k Smoothing Perplexity on train data: 287.69
+Unigram Add-k Smoothing Perplexity on validation data: 311.17
+Bigram Add-k Smoothing Perplexity on validation data: 355.55
+
+k =  0.9
+Unigram Add-k Smoothing Perplexity on train data: 338.17
+Bigram Add-k Smoothing Perplexity on train data: 306.92
+Unigram Add-k Smoothing Perplexity on validation data: 311.35
+Bigram Add-k Smoothing Perplexity on validation data: 372.83
+
+Laplace Smoothing:
+Unigram Laplace Smoothing Perplexity on train data: 338.28
+Bigram Laplace Smoothing Perplexity on train data: 325.40
+Unigram Laplace Smoothing Perplexity on validation data: 311.54
+Bigram Laplace Smoothing Perplexity on validation data: 389.42
+
+Un-smoothed:
+Un-smoothed Unigram Perplexity on train data: 337.62
+Un-smoothed Bigram Perplexity on train data: 35.04
+Un-smoothed Unigram Perplexity on validation data: 309.96
+Un-smoothed Bigram Perplexity on validation data: inf
+
+
+
+
+Missing Token Count:  4
+Vocabulary size: 1765
+
+k =  0.01
+Unigram Add-k Smoothing Perplexity on train data: 291.94
+Bigram Add-k Smoothing Perplexity on train data: 44.30
+Unigram Add-k Smoothing Perplexity on validation data: 274.59
+Bigram Add-k Smoothing Perplexity on validation data: 133.07
+
+k =  0.10888888888888888
+Unigram Add-k Smoothing Perplexity on train data: 291.95
+Bigram Add-k Smoothing Perplexity on train data: 86.11
+Unigram Add-k Smoothing Perplexity on validation data: 274.66
+Bigram Add-k Smoothing Perplexity on validation data: 152.63
+
+k =  0.20777777777777778
+Unigram Add-k Smoothing Perplexity on train data: 291.96
+Bigram Add-k Smoothing Perplexity on train data: 113.72
+Unigram Add-k Smoothing Perplexity on validation data: 274.73
+Bigram Add-k Smoothing Perplexity on validation data: 176.78
+
+k =  0.30666666666666664
+Unigram Add-k Smoothing Perplexity on train data: 291.99
+Bigram Add-k Smoothing Perplexity on train data: 136.71
+Unigram Add-k Smoothing Perplexity on validation data: 274.81
+Bigram Add-k Smoothing Perplexity on validation data: 197.40
+
+k =  0.40555555555555556
+Unigram Add-k Smoothing Perplexity on train data: 292.02
+Bigram Add-k Smoothing Perplexity on train data: 157.00
+Unigram Add-k Smoothing Perplexity on validation data: 274.90
+Bigram Add-k Smoothing Perplexity on validation data: 215.67
+
+k =  0.5044444444444445
+Unigram Add-k Smoothing Perplexity on train data: 292.05
+Bigram Add-k Smoothing Perplexity on train data: 175.38
+Unigram Add-k Smoothing Perplexity on validation data: 274.99
+Bigram Add-k Smoothing Perplexity on validation data: 232.23
+
+k =  0.6033333333333333
+Unigram Add-k Smoothing Perplexity on train data: 292.09
+Bigram Add-k Smoothing Perplexity on train data: 192.32
+Unigram Add-k Smoothing Perplexity on validation data: 275.08
+Bigram Add-k Smoothing Perplexity on validation data: 247.50
+
+k =  0.7022222222222222
+Unigram Add-k Smoothing Perplexity on train data: 292.13
+Bigram Add-k Smoothing Perplexity on train data: 208.10
+Unigram Add-k Smoothing Perplexity on validation data: 275.18
+Bigram Add-k Smoothing Perplexity on validation data: 261.71
+
+k =  0.8011111111111111
+Unigram Add-k Smoothing Perplexity on train data: 292.18
+Bigram Add-k Smoothing Perplexity on train data: 222.92
+Unigram Add-k Smoothing Perplexity on validation data: 275.28
+Bigram Add-k Smoothing Perplexity on validation data: 275.06
+
+k =  0.9
+Unigram Add-k Smoothing Perplexity on train data: 292.23
+Bigram Add-k Smoothing Perplexity on train data: 236.92
+Unigram Add-k Smoothing Perplexity on validation data: 275.38
+Bigram Add-k Smoothing Perplexity on validation data: 287.68
+
+Laplace Smoothing:
+Unigram Laplace Smoothing Perplexity on train data: 292.29
+Bigram Laplace Smoothing Perplexity on train data: 250.36
+Unigram Laplace Smoothing Perplexity on validation data: 275.49
+Bigram Laplace Smoothing Perplexity on validation data: 299.80
+
+Un-smoothed:
+Un-smoothed Unigram Perplexity on train data: 291.93
+Un-smoothed Bigram Perplexity on train data: 35.10
+Un-smoothed Unigram Perplexity on validation data: 274.58
+Un-smoothed Bigram Perplexity on validation data: inf
+
+
+
+
+Missing Token Count:  5
+Vocabulary size: 1459
+
+k =  0.01
+Unigram Add-k Smoothing Perplexity on train data: 256.33
+Bigram Add-k Smoothing Perplexity on train data: 41.57
+Unigram Add-k Smoothing Perplexity on validation data: 246.77
+Bigram Add-k Smoothing Perplexity on validation data: 116.07
+
+k =  0.10888888888888888
+Unigram Add-k Smoothing Perplexity on train data: 256.34
+Bigram Add-k Smoothing Perplexity on train data: 74.44
+Unigram Add-k Smoothing Perplexity on validation data: 246.81
+Bigram Add-k Smoothing Perplexity on validation data: 128.41
+
+k =  0.20777777777777778
+Unigram Add-k Smoothing Perplexity on train data: 256.35
+Bigram Add-k Smoothing Perplexity on train data: 95.97
+Unigram Add-k Smoothing Perplexity on validation data: 246.86
+Bigram Add-k Smoothing Perplexity on validation data: 146.81
+
+k =  0.30666666666666664
+Unigram Add-k Smoothing Perplexity on train data: 256.36
+Bigram Add-k Smoothing Perplexity on train data: 113.76
+Unigram Add-k Smoothing Perplexity on validation data: 246.90
+Bigram Add-k Smoothing Perplexity on validation data: 162.63
+
+k =  0.40555555555555556
+Unigram Add-k Smoothing Perplexity on train data: 256.38
+Bigram Add-k Smoothing Perplexity on train data: 129.37
+Unigram Add-k Smoothing Perplexity on validation data: 246.95
+Bigram Add-k Smoothing Perplexity on validation data: 176.67
+
+k =  0.5044444444444445
+Unigram Add-k Smoothing Perplexity on train data: 256.40
+Bigram Add-k Smoothing Perplexity on train data: 143.46
+Unigram Add-k Smoothing Perplexity on validation data: 247.01
+Bigram Add-k Smoothing Perplexity on validation data: 189.40
+
+k =  0.6033333333333333
+Unigram Add-k Smoothing Perplexity on train data: 256.42
+Bigram Add-k Smoothing Perplexity on train data: 156.42
+Unigram Add-k Smoothing Perplexity on validation data: 247.06
+Bigram Add-k Smoothing Perplexity on validation data: 201.12
+
+k =  0.7022222222222222
+Unigram Add-k Smoothing Perplexity on train data: 256.45
+Bigram Add-k Smoothing Perplexity on train data: 168.46
+Unigram Add-k Smoothing Perplexity on validation data: 247.12
+Bigram Add-k Smoothing Perplexity on validation data: 212.04
+
+k =  0.8011111111111111
+Unigram Add-k Smoothing Perplexity on train data: 256.48
+Bigram Add-k Smoothing Perplexity on train data: 179.75
+Unigram Add-k Smoothing Perplexity on validation data: 247.18
+Bigram Add-k Smoothing Perplexity on validation data: 222.29
+
+k =  0.9
+Unigram Add-k Smoothing Perplexity on train data: 256.51
+Bigram Add-k Smoothing Perplexity on train data: 190.40
+Unigram Add-k Smoothing Perplexity on validation data: 247.24
+Bigram Add-k Smoothing Perplexity on validation data: 231.97
+
+Laplace Smoothing:
+Unigram Laplace Smoothing Perplexity on train data: 256.54
+Bigram Laplace Smoothing Perplexity on train data: 200.62
+Unigram Laplace Smoothing Perplexity on validation data: 247.30
+Bigram Laplace Smoothing Perplexity on validation data: 241.27
+
+Un-smoothed:
+Un-smoothed Unigram Perplexity on train data: 256.33
+Un-smoothed Bigram Perplexity on train data: 34.75
+Un-smoothed Unigram Perplexity on validation data: 246.77
+Un-smoothed Bigram Perplexity on validation data: inf
+
+
+
+
+Missing Token Count:  6
+Vocabulary size: 1279
+
+k =  0.01
+Unigram Add-k Smoothing Perplexity on train data: 233.15
+Bigram Add-k Smoothing Perplexity on train data: 39.88
+Unigram Add-k Smoothing Perplexity on validation data: 227.47
+Bigram Add-k Smoothing Perplexity on validation data: 105.41
+
+k =  0.10888888888888888
+Unigram Add-k Smoothing Perplexity on train data: 233.16
+Bigram Add-k Smoothing Perplexity on train data: 67.52
+Unigram Add-k Smoothing Perplexity on validation data: 227.50
+Bigram Add-k Smoothing Perplexity on validation data: 113.64
+
+k =  0.20777777777777778
+Unigram Add-k Smoothing Perplexity on train data: 233.17
+Bigram Add-k Smoothing Perplexity on train data: 85.59
+Unigram Add-k Smoothing Perplexity on validation data: 227.53
+Bigram Add-k Smoothing Perplexity on validation data: 128.71
+
+k =  0.30666666666666664
+Unigram Add-k Smoothing Perplexity on train data: 233.18
+Bigram Add-k Smoothing Perplexity on train data: 100.45
+Unigram Add-k Smoothing Perplexity on validation data: 227.56
+Bigram Add-k Smoothing Perplexity on validation data: 141.76
+
+k =  0.40555555555555556
+Unigram Add-k Smoothing Perplexity on train data: 233.19
+Bigram Add-k Smoothing Perplexity on train data: 113.45
+Unigram Add-k Smoothing Perplexity on validation data: 227.60
+Bigram Add-k Smoothing Perplexity on validation data: 153.36
+
+k =  0.5044444444444445
+Unigram Add-k Smoothing Perplexity on train data: 233.20
+Bigram Add-k Smoothing Perplexity on train data: 125.15
+Unigram Add-k Smoothing Perplexity on validation data: 227.63
+Bigram Add-k Smoothing Perplexity on validation data: 163.89
+
+k =  0.6033333333333333
+Unigram Add-k Smoothing Perplexity on train data: 233.22
+Bigram Add-k Smoothing Perplexity on train data: 135.89
+Unigram Add-k Smoothing Perplexity on validation data: 227.67
+Bigram Add-k Smoothing Perplexity on validation data: 173.59
+
+k =  0.7022222222222222
+Unigram Add-k Smoothing Perplexity on train data: 233.24
+Bigram Add-k Smoothing Perplexity on train data: 145.85
+Unigram Add-k Smoothing Perplexity on validation data: 227.71
+Bigram Add-k Smoothing Perplexity on validation data: 182.63
+
+k =  0.8011111111111111
+Unigram Add-k Smoothing Perplexity on train data: 233.26
+Bigram Add-k Smoothing Perplexity on train data: 155.19
+Unigram Add-k Smoothing Perplexity on validation data: 227.75
+Bigram Add-k Smoothing Perplexity on validation data: 191.12
+
+k =  0.9
+Unigram Add-k Smoothing Perplexity on train data: 233.28
+Bigram Add-k Smoothing Perplexity on train data: 163.99
+Unigram Add-k Smoothing Perplexity on validation data: 227.79
+Bigram Add-k Smoothing Perplexity on validation data: 199.14
+
+Laplace Smoothing:
+Unigram Laplace Smoothing Perplexity on train data: 233.30
+Bigram Laplace Smoothing Perplexity on train data: 172.43
+Unigram Laplace Smoothing Perplexity on validation data: 227.84
+Bigram Laplace Smoothing Perplexity on validation data: 206.84
+
+Un-smoothed:
+Un-smoothed Unigram Perplexity on train data: 233.15
+Un-smoothed Bigram Perplexity on train data: 34.40
+Un-smoothed Unigram Perplexity on validation data: 227.47
+Un-smoothed Bigram Perplexity on validation data: inf
+
+
+
+
+Missing Token Count:  7
+Vocabulary size: 1161
+
+k =  0.01
+Unigram Add-k Smoothing Perplexity on train data: 216.57
+Bigram Add-k Smoothing Perplexity on train data: 38.63
+Unigram Add-k Smoothing Perplexity on validation data: 213.08
+Bigram Add-k Smoothing Perplexity on validation data: 97.63
+
+k =  0.10888888888888888
+Unigram Add-k Smoothing Perplexity on train data: 216.57
+Bigram Add-k Smoothing Perplexity on train data: 62.79
+Unigram Add-k Smoothing Perplexity on validation data: 213.11
+Bigram Add-k Smoothing Perplexity on validation data: 103.62
+
+k =  0.20777777777777778
+Unigram Add-k Smoothing Perplexity on train data: 216.58
+Bigram Add-k Smoothing Perplexity on train data: 78.60
+Unigram Add-k Smoothing Perplexity on validation data: 213.13
+Bigram Add-k Smoothing Perplexity on validation data: 116.61
+
+k =  0.30666666666666664
+Unigram Add-k Smoothing Perplexity on train data: 216.59
+Bigram Add-k Smoothing Perplexity on train data: 91.56
+Unigram Add-k Smoothing Perplexity on validation data: 213.15
+Bigram Add-k Smoothing Perplexity on validation data: 127.93
+
+k =  0.40555555555555556
+Unigram Add-k Smoothing Perplexity on train data: 216.59
+Bigram Add-k Smoothing Perplexity on train data: 102.88
+Unigram Add-k Smoothing Perplexity on validation data: 213.18
+Bigram Add-k Smoothing Perplexity on validation data: 138.01
+
+k =  0.5044444444444445
+Unigram Add-k Smoothing Perplexity on train data: 216.61
+Bigram Add-k Smoothing Perplexity on train data: 113.05
+Unigram Add-k Smoothing Perplexity on validation data: 213.21
+Bigram Add-k Smoothing Perplexity on validation data: 147.16
+
+k =  0.6033333333333333
+Unigram Add-k Smoothing Perplexity on train data: 216.62
+Bigram Add-k Smoothing Perplexity on train data: 122.37
+Unigram Add-k Smoothing Perplexity on validation data: 213.24
+Bigram Add-k Smoothing Perplexity on validation data: 155.60
+
+k =  0.7022222222222222
+Unigram Add-k Smoothing Perplexity on train data: 216.63
+Bigram Add-k Smoothing Perplexity on train data: 131.01
+Unigram Add-k Smoothing Perplexity on validation data: 213.27
+Bigram Add-k Smoothing Perplexity on validation data: 163.46
+
+k =  0.8011111111111111
+Unigram Add-k Smoothing Perplexity on train data: 216.65
+Bigram Add-k Smoothing Perplexity on train data: 139.11
+Unigram Add-k Smoothing Perplexity on validation data: 213.30
+Bigram Add-k Smoothing Perplexity on validation data: 170.84
+
+k =  0.9
+Unigram Add-k Smoothing Perplexity on train data: 216.66
+Bigram Add-k Smoothing Perplexity on train data: 146.73
+Unigram Add-k Smoothing Perplexity on validation data: 213.33
+Bigram Add-k Smoothing Perplexity on validation data: 177.82
+
+Laplace Smoothing:
+Unigram Laplace Smoothing Perplexity on train data: 216.68
+Bigram Laplace Smoothing Perplexity on train data: 154.04
+Unigram Laplace Smoothing Perplexity on validation data: 213.36
+Bigram Laplace Smoothing Perplexity on validation data: 184.52
+
+Un-smoothed:
+Un-smoothed Unigram Perplexity on train data: 216.57
+Un-smoothed Bigram Perplexity on train data: 34.01
+Un-smoothed Unigram Perplexity on validation data: 213.08
+Un-smoothed Bigram Perplexity on validation data: inf
+
+
+
+
+Missing Token Count:  8
+Vocabulary size: 1056
+
+k =  0.01
+Unigram Add-k Smoothing Perplexity on train data: 200.73
+Bigram Add-k Smoothing Perplexity on train data: 37.39
+Unigram Add-k Smoothing Perplexity on validation data: 198.02
+Bigram Add-k Smoothing Perplexity on validation data: 90.61
+
+k =  0.10888888888888888
+Unigram Add-k Smoothing Perplexity on train data: 200.74
+Bigram Add-k Smoothing Perplexity on train data: 58.43
+Unigram Add-k Smoothing Perplexity on validation data: 198.04
+Bigram Add-k Smoothing Perplexity on validation data: 94.43
+
+k =  0.20777777777777778
+Unigram Add-k Smoothing Perplexity on train data: 200.74
+Bigram Add-k Smoothing Perplexity on train data: 72.24
+Unigram Add-k Smoothing Perplexity on validation data: 198.06
+Bigram Add-k Smoothing Perplexity on validation data: 105.50
+
+k =  0.30666666666666664
+Unigram Add-k Smoothing Perplexity on train data: 200.75
+Bigram Add-k Smoothing Perplexity on train data: 83.54
+Unigram Add-k Smoothing Perplexity on validation data: 198.08
+Bigram Add-k Smoothing Perplexity on validation data: 115.23
+
+k =  0.40555555555555556
+Unigram Add-k Smoothing Perplexity on train data: 200.76
+Bigram Add-k Smoothing Perplexity on train data: 93.38
+Unigram Add-k Smoothing Perplexity on validation data: 198.10
+Bigram Add-k Smoothing Perplexity on validation data: 123.91
+
+k =  0.5044444444444445
+Unigram Add-k Smoothing Perplexity on train data: 200.76
+Bigram Add-k Smoothing Perplexity on train data: 102.22
+Unigram Add-k Smoothing Perplexity on validation data: 198.13
+Bigram Add-k Smoothing Perplexity on validation data: 131.81
+
+k =  0.6033333333333333
+Unigram Add-k Smoothing Perplexity on train data: 200.77
+Bigram Add-k Smoothing Perplexity on train data: 110.31
+Unigram Add-k Smoothing Perplexity on validation data: 198.15
+Bigram Add-k Smoothing Perplexity on validation data: 139.09
+
+k =  0.7022222222222222
+Unigram Add-k Smoothing Perplexity on train data: 200.78
+Bigram Add-k Smoothing Perplexity on train data: 117.81
+Unigram Add-k Smoothing Perplexity on validation data: 198.17
+Bigram Add-k Smoothing Perplexity on validation data: 145.88
+
+k =  0.8011111111111111
+Unigram Add-k Smoothing Perplexity on train data: 200.80
+Bigram Add-k Smoothing Perplexity on train data: 124.82
+Unigram Add-k Smoothing Perplexity on validation data: 198.20
+Bigram Add-k Smoothing Perplexity on validation data: 152.26
+
+k =  0.9
+Unigram Add-k Smoothing Perplexity on train data: 200.81
+Bigram Add-k Smoothing Perplexity on train data: 131.43
+Unigram Add-k Smoothing Perplexity on validation data: 198.23
+Bigram Add-k Smoothing Perplexity on validation data: 158.29
+
+Laplace Smoothing:
+Unigram Laplace Smoothing Perplexity on train data: 200.82
+Bigram Laplace Smoothing Perplexity on train data: 137.76
+Unigram Laplace Smoothing Perplexity on validation data: 198.25
+Bigram Laplace Smoothing Perplexity on validation data: 164.08
+
+Un-smoothed:
+Un-smoothed Unigram Perplexity on train data: 200.73
+Un-smoothed Bigram Perplexity on train data: 33.52
+Un-smoothed Unigram Perplexity on validation data: 198.02
+Un-smoothed Bigram Perplexity on validation data: inf
+
+
+
+
+Missing Token Count:  9
+Vocabulary size: 967
+
+k =  0.01
+Unigram Add-k Smoothing Perplexity on train data: 186.60
+Bigram Add-k Smoothing Perplexity on train data: 36.27
+Unigram Add-k Smoothing Perplexity on validation data: 185.86
+Bigram Add-k Smoothing Perplexity on validation data: 84.79
+
+k =  0.10888888888888888
+Unigram Add-k Smoothing Perplexity on train data: 186.60
+Bigram Add-k Smoothing Perplexity on train data: 54.68
+Unigram Add-k Smoothing Perplexity on validation data: 185.88
+Bigram Add-k Smoothing Perplexity on validation data: 87.16
+
+k =  0.20777777777777778
+Unigram Add-k Smoothing Perplexity on train data: 186.61
+Bigram Add-k Smoothing Perplexity on train data: 66.82
+Unigram Add-k Smoothing Perplexity on validation data: 185.89
+Bigram Add-k Smoothing Perplexity on validation data: 96.78
+
+k =  0.30666666666666664
+Unigram Add-k Smoothing Perplexity on train data: 186.61
+Bigram Add-k Smoothing Perplexity on train data: 76.74
+Unigram Add-k Smoothing Perplexity on validation data: 185.91
+Bigram Add-k Smoothing Perplexity on validation data: 105.29
+
+k =  0.40555555555555556
+Unigram Add-k Smoothing Perplexity on train data: 186.62
+Bigram Add-k Smoothing Perplexity on train data: 85.36
+Unigram Add-k Smoothing Perplexity on validation data: 185.92
+Bigram Add-k Smoothing Perplexity on validation data: 112.91
+
+k =  0.5044444444444445
+Unigram Add-k Smoothing Perplexity on train data: 186.62
+Bigram Add-k Smoothing Perplexity on train data: 93.10
+Unigram Add-k Smoothing Perplexity on validation data: 185.94
+Bigram Add-k Smoothing Perplexity on validation data: 119.84
+
+k =  0.6033333333333333
+Unigram Add-k Smoothing Perplexity on train data: 186.63
+Bigram Add-k Smoothing Perplexity on train data: 100.18
+Unigram Add-k Smoothing Perplexity on validation data: 185.96
+Bigram Add-k Smoothing Perplexity on validation data: 126.23
+
+k =  0.7022222222222222
+Unigram Add-k Smoothing Perplexity on train data: 186.64
+Bigram Add-k Smoothing Perplexity on train data: 106.73
+Unigram Add-k Smoothing Perplexity on validation data: 185.98
+Bigram Add-k Smoothing Perplexity on validation data: 132.20
+
+k =  0.8011111111111111
+Unigram Add-k Smoothing Perplexity on train data: 186.65
+Bigram Add-k Smoothing Perplexity on train data: 112.86
+Unigram Add-k Smoothing Perplexity on validation data: 186.00
+Bigram Add-k Smoothing Perplexity on validation data: 137.80
+
+k =  0.9
+Unigram Add-k Smoothing Perplexity on train data: 186.66
+Bigram Add-k Smoothing Perplexity on train data: 118.63
+Unigram Add-k Smoothing Perplexity on validation data: 186.02
+Bigram Add-k Smoothing Perplexity on validation data: 143.10
+
+Laplace Smoothing:
+Unigram Laplace Smoothing Perplexity on train data: 186.67
+Bigram Laplace Smoothing Perplexity on train data: 124.15
+Unigram Laplace Smoothing Perplexity on validation data: 186.04
+Bigram Laplace Smoothing Perplexity on validation data: 148.18
+
+Un-smoothed:
+Un-smoothed Unigram Perplexity on train data: 186.60
+Un-smoothed Bigram Perplexity on train data: 33.01
+Un-smoothed Unigram Perplexity on validation data: 185.86
+Un-smoothed Bigram Perplexity on validation data: inf
+
+
+
+
+Missing Token Count:  10
+Vocabulary size: 900
+
+k =  0.01
+Unigram Add-k Smoothing Perplexity on train data: 175.48
+Bigram Add-k Smoothing Perplexity on train data: 35.42
+Unigram Add-k Smoothing Perplexity on validation data: 175.93
+Bigram Add-k Smoothing Perplexity on validation data: 80.20
+
+k =  0.10888888888888888
+Unigram Add-k Smoothing Perplexity on train data: 175.49
+Bigram Add-k Smoothing Perplexity on train data: 51.88
+Unigram Add-k Smoothing Perplexity on validation data: 175.94
+Bigram Add-k Smoothing Perplexity on validation data: 81.63
+
+k =  0.20777777777777778
+Unigram Add-k Smoothing Perplexity on train data: 175.49
+Bigram Add-k Smoothing Perplexity on train data: 62.80
+Unigram Add-k Smoothing Perplexity on validation data: 175.95
+Bigram Add-k Smoothing Perplexity on validation data: 90.21
+
+k =  0.30666666666666664
+Unigram Add-k Smoothing Perplexity on train data: 175.49
+Bigram Add-k Smoothing Perplexity on train data: 71.71
+Unigram Add-k Smoothing Perplexity on validation data: 175.96
+Bigram Add-k Smoothing Perplexity on validation data: 97.85
+
+k =  0.40555555555555556
+Unigram Add-k Smoothing Perplexity on train data: 175.50
+Bigram Add-k Smoothing Perplexity on train data: 79.46
+Unigram Add-k Smoothing Perplexity on validation data: 175.97
+Bigram Add-k Smoothing Perplexity on validation data: 104.69
+
+k =  0.5044444444444445
+Unigram Add-k Smoothing Perplexity on train data: 175.50
+Bigram Add-k Smoothing Perplexity on train data: 86.40
+Unigram Add-k Smoothing Perplexity on validation data: 175.99
+Bigram Add-k Smoothing Perplexity on validation data: 110.93
+
+k =  0.6033333333333333
+Unigram Add-k Smoothing Perplexity on train data: 175.51
+Bigram Add-k Smoothing Perplexity on train data: 92.74
+Unigram Add-k Smoothing Perplexity on validation data: 176.00
+Bigram Add-k Smoothing Perplexity on validation data: 116.69
+
+k =  0.7022222222222222
+Unigram Add-k Smoothing Perplexity on train data: 175.52
+Bigram Add-k Smoothing Perplexity on train data: 98.62
+Unigram Add-k Smoothing Perplexity on validation data: 176.02
+Bigram Add-k Smoothing Perplexity on validation data: 122.06
+
+k =  0.8011111111111111
+Unigram Add-k Smoothing Perplexity on train data: 175.52
+Bigram Add-k Smoothing Perplexity on train data: 104.10
+Unigram Add-k Smoothing Perplexity on validation data: 176.03
+Bigram Add-k Smoothing Perplexity on validation data: 127.11
+
+k =  0.9
+Unigram Add-k Smoothing Perplexity on train data: 175.53
+Bigram Add-k Smoothing Perplexity on train data: 109.27
+Unigram Add-k Smoothing Perplexity on validation data: 176.05
+Bigram Add-k Smoothing Perplexity on validation data: 131.88
+
+Laplace Smoothing:
+Unigram Laplace Smoothing Perplexity on train data: 175.54
+Bigram Laplace Smoothing Perplexity on train data: 114.22
+Unigram Laplace Smoothing Perplexity on validation data: 176.06
+Bigram Laplace Smoothing Perplexity on validation data: 136.46
+
+Un-smoothed:
+Un-smoothed Unigram Perplexity on train data: 175.48
+Un-smoothed Bigram Perplexity on train data: 32.58
+Un-smoothed Unigram Perplexity on validation data: 175.92
+Un-smoothed Bigram Perplexity on validation data: inf
